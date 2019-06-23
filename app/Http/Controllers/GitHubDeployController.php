@@ -16,10 +16,13 @@ class GitHubDeployController extends Controller
     if (hash_equals($githubHash, $localHash)) {
         $root_path = base_path();
         $process = new Process('cd ' . $root_path . '; ./deploy.sh');
+        /*
         $process->run(function ($type, $buffer) {
             Log::info($buffer);
             echo $buffer;
         });
+        */
+        $process->start();
     }
   }
 }
