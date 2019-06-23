@@ -1,7 +1,6 @@
 @extends('templates.primary-app')
 
 @section('content')
-<div class="text-center">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
@@ -27,6 +26,5 @@
       <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
     </div>
   </footer>
-</div>
 </div>
 @endsection
