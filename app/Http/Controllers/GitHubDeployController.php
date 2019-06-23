@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Symfony\Component\Process\Process;
 
 class GitHubDeployController extends Controller
@@ -16,7 +17,8 @@ class GitHubDeployController extends Controller
         $root_path = base_path();
         $process = new Process('cd ' . $root_path . '; ./deploy.sh');
         $process->run(function ($type, $buffer) {
-            echo $buffer;
+            Log::info($buffer);
+            echo 'Deployment Run!';
         });
     }
   }
