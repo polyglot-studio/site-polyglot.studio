@@ -1,5 +1,6 @@
 @include('partials.header')
 
-@yield('content')
-
+<body class="text-center">
+  @yield('content')
+</body>
 @include('partials.footer')
