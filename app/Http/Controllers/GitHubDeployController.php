@@ -18,7 +18,7 @@ class GitHubDeployController extends Controller
         $process = new Process('cd ' . $root_path . '; ./deploy.sh');
         $process->run(function ($type, $buffer) {
             Log::info($buffer);
-            echo 'Deployment Run!';
+            echo $buffer;
         });
     }
   }
