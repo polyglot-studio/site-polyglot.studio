@@ -8,6 +8,7 @@ git pull
 
 # update views and frontend dependancies
 npm install
+npm run dev
 
 # update PHP dependencies
 composer install --no-interaction --prefer-dist
