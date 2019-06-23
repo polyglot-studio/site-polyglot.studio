@@ -4,7 +4,8 @@
 php artisan down
 
 # update source code
-git pull
+git fetch --all
+git reset --hard origin/master
 
 # update views and frontend dependancies
 npm install
