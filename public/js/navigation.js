@@ -1,8 +1,9 @@
 function navigationLinkClick(e) {
   console.log('func fired');
+  var navheight = jQuery("nav#mainnav").height();
   if (jQuery("nav#mainnav").hasClass('nav-is-bot')) {
     console.log('is bot');
-    jQuery("nav#mainnav").removeClass('nav-is-bot').addClass("nav-is-top").attr('style','bottom:inherit;');
+    jQuery("nav#mainnav").removeClass('nav-is-bot').addClass("nav-is-top").attr('style','bottom:calc(100vh - ' + navheight + 'px);');
   }
   else {
     console.log('is top');
