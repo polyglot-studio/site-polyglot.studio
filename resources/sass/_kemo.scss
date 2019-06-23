@@ -1,3 +1,9 @@
-nav.navbar {
-  transition: all 1s ease;
+
+nav#mainnav {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    transition: all 1s ease;
 }

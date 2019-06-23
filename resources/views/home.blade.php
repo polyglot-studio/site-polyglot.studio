@@ -30,7 +30,7 @@
 @endsection
 
 @section('content')
-<nav id="mainnav" class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+<nav id="mainnav" class="navbar navbar-expand-sm navbar-dark bg-dark nav-is-bottom" style="bottom: 0;">
   <a class="navbar-brand" href="#">Bottom navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
