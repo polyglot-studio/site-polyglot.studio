@@ -3,7 +3,7 @@ function navigationLinkClick(e) {
 }
 
 jQuery(document).ready(function() {
-  jQuery("nav#mainnav").on('a', 'click', function(e) {
+  jQuery("nav#mainnav").on('click', 'a', function(e) {
     e.preventDefault();
     navigationLinkClick(e);
   })
