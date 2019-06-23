@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/webhooks/github/deploy', 'GitHubDeployController@deploy');
