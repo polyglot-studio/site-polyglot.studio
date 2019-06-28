@@ -1,0 +1,13 @@
+[Unit]
+Description=Github Webhook
+After=network.target
+
+[Service]
+Environment=NODE_PORT=6969
+Type=simple
+User=www-data
+ExecStart=/usr/bin/nodejs /var/www/polyglot-studios/webhook.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
