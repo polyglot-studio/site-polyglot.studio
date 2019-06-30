@@ -1,6 +1,7 @@
 @include('partials.header')
 
-<body class="text-center">
+<body>
+  @include('partials.loader')
   @yield('content')
 </body>
 @include('partials.footer')

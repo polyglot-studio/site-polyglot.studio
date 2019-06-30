@@ -7,3 +7,17 @@ nav#mainnav {
     z-index: 1030;
     transition: all 1s ease;
 }
+
+#preloadOverlay {
+	position:fixed;
+	height:100vh;
+	padding:45vh 0;
+	width:100vw;
+	text-align: center;
+	overflow:hidden;
+	top:0;
+	left:0;
+	z-index:9999;
+	background:rgba(0,0,0,1);
+	color:#FFF;
+}
