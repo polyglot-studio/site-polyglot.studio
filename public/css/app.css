@@ -17062,13 +17062,18 @@ body {
 }
 
 nav#mainnav {
-  position: fixed;
+  /* position: fixed;*/
+  position: relative;
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 1030;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 #preloadOverlay {
@@ -17083,5 +17088,80 @@ nav#mainnav {
   z-index: 9999;
   background: black;
   color: #FFF;
+}
+
+#contentHolder {
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#contentHolder #contentSlider {
+  width: 100vw;
+  position: relative;
+}
+
+#contentHolder #contentSlider .contentHalves {
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  overflow: auto;
+  z-index: 99;
+  display: inline;
+}
+
+#contentHolder #contentSlider #topContent {
+  background: black;
+}
+
+#contentHolder #contentSlider #bottomContent {
+  background: black;
+}
+
+#contentHolder #contentSlider .margin-bottom {
+  margin-bottom: 55px;
+}
+
+#contentHolder #contentSlider .topLayer {
+  z-index: 999;
+}
+
+#contentHolder #contentSlider .bottomLayer {
+  z-index: 12;
+}
+
+#contentHolder #contentSlider .offscreen-top {
+  top: -100vh;
+}
+
+#contentHolder #contentSlider .offscreen-bottom {
+  top: 100vh;
+}
+
+#contentHolder #contentSlider .disappear {
+  opacity: 0;
+}
+
+.navbar-toggler {
+  padding: 0.5rem;
+}
+
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.75);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.full-image {
+  width: 100%;
+  height: 100%;
 }
 

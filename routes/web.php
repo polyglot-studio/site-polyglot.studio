@@ -16,3 +16,23 @@ Route::get('/', function () {
 });
 
 Route::post('/webhooks/github/deploy', 'GitHubDeployController@deploy');
+
+Route::get('/pages/{page}', function($page) {
+  switch (mb_strtolower($page)) {
+    case "home":
+      return view('pages.home');
+    break;
+    case "about":
+      return view('pages.about');
+    break;
+    case "contact":
+      return view('pages.contact');
+    break;
+    case "projects":
+      return view('pages.projects');
+    break;
+    case "services":
+      return view('pages.services');
+    break;
+  }
+});
